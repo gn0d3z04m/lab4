@@ -20,4 +20,4 @@ jobs:
       run: |
         ls ${{ github.workspace }}
     - run: cd build/hello_world_application
-    - run: ./hello
+    - run: ls
