@@ -19,6 +19,8 @@ jobs:
     - name: List files
       run: |
         ls ${{ github.workspace }}
-    - run: |
-        cd build
+    - name: Running
+      working-directory: ./build
+      run: | 
+        ls
         ./hello
