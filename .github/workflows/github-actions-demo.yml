@@ -1,0 +1,10 @@
+name: GitHub Actions 
+run-name: ${{ github.actor }} test
+on: [push]
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
