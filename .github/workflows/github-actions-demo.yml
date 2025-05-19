@@ -10,3 +10,12 @@ jobs:
     - name: List files in the repository
       run: |
         ls ${{ github.workspace }}
+    - name: cmake
+      uses: threeal/cmake-actions@v2.1.0
+    - name: Build
+      run: cmake -H. -Bbuild
+    - name: Build step2
+      run:  cmake --build build
+    - name: List files
+      run: |
+        ls ${{ github.workspace }}
