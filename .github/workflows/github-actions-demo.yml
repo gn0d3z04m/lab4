@@ -19,4 +19,6 @@ jobs:
     - name: List files
       run: |
         ls ${{ github.workspace }}
-    - run: ./build/hello
+    - run: |
+        cd build
+        ./hello
