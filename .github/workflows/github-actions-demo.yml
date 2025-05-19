@@ -20,7 +20,5 @@ jobs:
       run: |
         ls ${{ github.workspace }}
     - name: Running
-      working-directory: ./build
-      run: | 
-        ls
-        ./hello
+      working-directory: ./build/hello_world_application
+      run: ./hello
